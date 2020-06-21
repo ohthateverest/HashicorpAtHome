@@ -1,10 +1,10 @@
-homeserver01.consul ansible_host=<TARGET IP ADDRESS>
+mimir.consul ansible_host=172.31.96.17
 
 [consul_instances]
-homeserver01.consul consul_node_role=server consul_bootstrap_expect=true
+mimir.consul consul_node_role=server consul_bootstrap_expect=true
 
 [vault_instances]
-homeserver01.consul
+mimir.consul
 
 [docker_instances]
-homeserver01.consul nomad_node_role=both
+mimir.consul nomad_node_role=both

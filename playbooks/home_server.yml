@@ -48,9 +48,3 @@
       nomad_ports_http: 4646
       nomad_ports_rpc: 4647
       nomad_ports_serf: 4648
-      nomad_config_custom:
-          telemetry:
-              publish_allocation_metrics: true
-              publish_node_metrics: true
-              datadog_address: "localhost:8125"
-              disable_hostname: true
